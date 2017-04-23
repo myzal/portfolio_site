@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Strona portfolio Mateusza Myżalika">
+    <meta name="keywords" content="Myżalik,Mateusz,CV,strona,www,git">
+    <meta name="author" content="Mateusz Myżalik">
+    <title>Mateusz Myżalik - Portfolio</title>
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Arsenal|Athiti|Covered+By+Your+Grace|Dosis|Exo|Kalam|Marcellus|Raleway|Shadows+Into+Light+Two"
+        rel="stylesheet">
+    <!-- build:css -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <!--<link rel="stylesheet" href="css/base.css">-->
+    <!-- endbuild -->
+    <link rel="stylesheet" href="src/css/technology-icons.css">
+    <link rel="stylesheet" href="src/fonts/font-awesome-4.7.0/css/font-awesome.min.css"> {% include head.html %} {% seo %}
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#/">
+                        <h1> Portfolio - Mateusz Myżalik</h1>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse-main">
+                    <div class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#about-me">About me</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio">Own projects</a>
+                        </li>
+                        <li>
+                            <a href="#technologies">Technologies</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+
+        <div class="container">
+            <section id="about-me">
+                <div class="row">
+                    <header>
+                        <!-- <img src="src/img/mateusz_myzalik_small.jpg" class="img-responsive my-small-image" alt="Mateusz Myżalik"> -->
+                        <h2>About me</h2>
+                    </header>
+
+                    <!--<div class="row">-->
+                    <div class="col-sm-6 my-image">
+                        <figure>
+                            <a href="#">
+                                <img src="src/img/mateusz_myzalik.jpg" class="img-responsive" alt="Mateusz Myżalik">
+                            </a>
+                            <figcaption>It's me</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="text-about-me">
+                            <p>
+                                Hello, my name is Mateusz. I am Software Developer in one of the Szczecin companies from the IT sector.
+
+                            </p>
+                            <p>
+                                I graduated Computer Science at the West Pomeranian University of Technology. I have been interested in creating Websites
+                                and Web Applications for several years. I work in Web Technologies as a Software Developer
+                                with over 2 years of experience. However, I am most interested in the Front End layer of
+                                web applications, from which I constantly improve my skills.
+
+                            </p>
+                            <p>
+                                In addition to programming, I like to ride a bike, watch war documentaries and also fantasy literature.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--</div>-->
+            </section>
+        </div>
+
+        <div class="container-fluid">
+            <section id="portfolio">
+                <div class="row">
+                    <header>
+                        <h2 class="my-portfolio">My portfolio</h2>
+                    </header>
+
+                    <div id="myCarousel" class="carousel slide" data-interval="false" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <div class="fluid-row">
+                                    <div class="col-md-6 image-col">
+                                        <img src="src/img/optic.jpg" class="img-responsive" alt="title project">
+                                    </div>
+
+                                    <div class="col-md-6 text-col">
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <h3>Website of the optical plant</h3>
+                                                <p>Example site of the optical plant containing the contact form, map, slider,
+                                                    widget connecting to fb. Designed in RWD technology</p>
+
+                                                <div class="technology_links_wrapper">
+                                                    <h4>Used technologies:</h4>
+                                                    <ul>
+                                                        <li data-toggle="tooltip" title="HTML5">
+                                                            <em class="icon-html5 icon big-icon"></em>
+                                                        </li>
+                                                        <li data-toggle="tooltip" title="CSS3">
+                                                            <em class="icon-css3 icon big-icon"></em>
+                                                        </li>
+                                                        <li data-toggle="tooltip" title="ANGULAR">
+                                                            <em class="icon-angular icon big-icon"></em>
+                                                        </li>
+                                                        <li data-toggle="tooltip" title="BOOTSTRAP">
+                                                            <em class="icon-bootstrap icon big-icon"></em>
+                                                        </li>
+                                                        <li data-toggle="tooltip" title="JQUERY">
+                                                            <em class="icon-jquery icon big-icon"></em>
+                                                        </li>
+                                                    </ul>
+
+                                                    <div class="show-links-projects">
+                                                        <h5>Links:</h5>
+                                                        <ul class="technology">
+                                                            <li data-toggle="tooltip" title="Github">
+                                                                <a href="https://github.com/myzal/optician_site" target="_blank">
+                                                                    <em class="icon-git icon big-icon"></em>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="fluid-row">
+                                    <div class="col-lg-6 image-col">
+                                        <img src="src/img/telephone-book.jpg" class="img-responsive" alt="title project">
+                                    </div>
+
+                                    <div class="col-lg-6 text-col">
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <h3>Phone book application</h3>
+                                                <p>Application containing a list of contacts saved in JSON format. In the application
+                                                    we can add, delete, edit your own contacts. The application allows you
+                                                    to easy to find a previously saved contact. It also has options such
+                                                    as: user birth calendar, division into groups, as well as a map of addresses
+                                                    of our saved individual users.</p>
+
+                                                <div class="technology_links_wrapper">
+                                                    <h4>Used technologies:</h4>
+                                                    <ul>
+                                                        <li data-toggle="tooltip" title="ANGULAR">
+                                                            <em class="icon-angular icon big-icon"></em>
+                                                        </li>
+                                                        <li data-toggle="tooltip" title="HTML5">
+                                                            <em class="icon-html5 icon big-icon"></em>
+                                                        </li>
+                                                        <li data-toggle="tooltip" title="CSS3">
+                                                            <em class="icon-css3 icon big-icon"></em>
+                                                        </li>
+                                                        <li data-toggle="tooltip" title="BOOTSTRAP">
+                                                            <em class="icon-bootstrap icon big-icon"></em>
+                                                        </li>
+                                                    </ul>
+
+                                                    <div class="show-links-projects">
+                                                        <h5>Links:</h5>
+                                                        <ul class="technology">
+                                                            <li data-toggle="tooltip" title="Github">
+                                                                <a href="https://github.com/myzal/advanced_phone_book" target="_blank">
+                                                                    <em class="icon-git icon big-icon"></em>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="fluid-row">
+                                    <div class="col-lg-6 image-col">
+                                        <img src="src/img/augmented_szczecin.jpg" class="img-responsive" alt="title project">
+                                    </div>
+
+                                    <div class="col-lg-6 text-col">
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <h3>Augmented Szczecin application</h3>
+                                                <p>An application created as part of the Patronage project organized by BLStream.
+                                                    The project was created in a 4-person Front-end group. AugmentedSzczecin
+                                                    allows you to find places of interest in Szczecin, learn detailed information
+                                                    about them, set a route and browse the map with places in the area.
+                                                </p>
+                                                <div class="technology_links_wrapper">
+                                                    <h4>Used technologies:</h4>
+                                                    <ul>
+                                                        <li data-toggle="tooltip" title="ANGULAR">
+                                                            <em class="icon-angular icon big-icon"></em>
+                                                        </li>
+                                                        <li data-toggle="tooltip" title="HTML5">
+                                                            <em class="icon-html5 icon big-icon"></em>
+                                                        </li>
+                                                        <li data-toggle="tooltip" title="CSS3">
+                                                            <em class="icon-css3 icon big-icon"></em>
+                                                        </li>
+                                                    </ul>
+
+                                                    <div class="show-links-projects">
+                                                        <h5>Links:</h5>
+                                                        <ul class="technology">
+                                                            <li data-toggle="tooltip" title="Github">
+                                                                <a href="https://github.com/blstream/AugmentedSzczecin_HTML" target="_blank">
+                                                                    <em class="icon-git icon big-icon"></em>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                        <!-- Left and right controls  -->
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+
+                </div>
+            </section>
+
+        </div>
+
+        <div class="container">
+            <section id="technologies">
+                <div class="row">
+                    <header>
+                        <h2 class="my-portfolio">Technologies that I use...</h2>
+                    </header>
+
+                    <div class="col-lg-8">
+                        <div class="technologies-wrapper">
+                            <div class="row row-technologies">
+                                <div class="col-lg-3 col-xs-6" data-toggle="tooltip" title="CSS3 - intermediate level">
+                                    <div class="circle-background"></div>
+                                    <em class="icon-css3 icon big-icon"></em>
+                                </div>
+                                <div class="col-lg-3 col-xs-6" data-toggle="tooltip" title="HTML5 - intermediate level">
+                                    <em class="icon-html5 icon big-icon"></em>
+                                    <div class="circle-background"></div>
+
+                                </div>
+                                <div class="col-lg-3 col-xs-6" data-toggle="tooltip" title="jQuery - intermediate level">
+                                    <em class="icon-jquery icon big-icon"></em>
+                                    <div class="circle-background"></div>
+
+                                </div>
+                                <div class="col-lg-3 col-xs-6" data-toggle="tooltip" title="Bootstrap - intermediate level">
+                                    <em class="icon-bootstrap icon big-icon"></em>
+                                    <div class="circle-background"></div>
+
+                                </div>
+                            </div>
+                            <div class="row row-technologies">
+                                <div class="col-lg-3 col-xs-6" data-toggle="tooltip" title="Javascript - intermediate level">
+                                    <em class="icon-js icon big-icon"></em>
+                                    <div class="circle-background"></div>
+
+                                </div>
+                                <div class="col-lg-3 col-xs-6" data-toggle="tooltip" title="Drupal - medium level">
+                                    <em class="icon-drupal icon big-icon"></em>
+                                    <div class="circle-background"></div>
+
+
+                                </div>
+                                <div class="col-lg-3 col-xs-6" data-toggle="tooltip" title="PHP - medium level">
+                                    <em class="icon-php icon medium-icon"></em>
+                                    <div class="circle-background"></div>
+
+
+                                </div>
+                                <div class="col-lg-3 col-xs-6" data-toggle="tooltip" title="AngularJS - medium level">
+                                    <em class="icon-angular icon medium-icon"></em>
+                                    <div class="circle-background"></div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="row row-technologies">
+                                <div class="col-lg-3 col-xs-6" data-toggle="tooltip" title="Photoshop - Basic level">
+                                    <em class="icon-photoshop icon small-icon"></em>
+                                    <div class="circle-background"></div>
+
+
+                                </div>
+                                <div class="col-lg-3 col-xs-6" data-toggle="tooltip" title="SASS - Basic level">
+                                    <em class="icon-sass icon small-icon"></em>
+                                    <div class="circle-background"></div>
+
+
+                                </div>
+                                <div class="col-lg-3 col-xs-6" data-toggle="tooltip" title="GIT - medium level">
+                                    <em class="icon-git icon small-icon"></em>
+                                    <div class="circle-background"></div>
+
+
+                                </div>
+                                <div class="col-lg-3 col-xs-6" data-toggle="tooltip" title="MySql - Basic level">
+                                    <em class="icon-mysql icon small-icon"></em>
+                                    <div class="circle-background"></div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 description-skills">
+                        <p>
+                            I try to constantly increase my classifications in the front-end layer of Web Applications. In this category of WebDevelopment
+                            I can boast good knowledge of HTML, CSS3, Javascript (jQuery, AngularJS) and Bootstrap.
+                        </p>
+                        <p>
+                            I can also create applications based on AngularJS, with which I had experience while participating in the BlStream Patronage
+                            project and when creating your own application - a phone book. I use Photoshop well for cutting
+                            graphic designs. I also met the SASS preprocessor and the Gulp automation tool.
+                        </p>
+                        <p>
+                            In my professional work I also use Backend technologies. I have mastered: Node.js, Drupal API, PHP5.ja. I am efficient in
+                            using relational MySQL databases and I know the GIT version control system well.
+
+                        </p>
+
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+
+                <div class="row">
+                    <header>
+                        <h2>Contact me!</h2>
+                    </header>
+                    <div class="col-md-offset-2 col-md-2 col-sm-2">
+                        <img class="img-responsive postcard" src="src/img/koperta.png">
+
+                    </div>
+
+                    <div class="col-md-6 col-sm-10">
+
+                        <div class="form-wrapper">
+                            <div class="form-result">
+                                Thank you for sending me a message, I will try to answer as soon as possible.
+
+                            </div>
+
+
+                            <form name="contact-with-me" id="contact-with-me" class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="firstname">Name:</label>
+                                    <input type="text" name="firstname" id="firstname" class="form-control" placeholder="Your name" />
+
+                                </div>
+                                <div class="form-group">
+
+                                    <label for="lastname">Surname:</label>
+                                    <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Your surname" />
+                                </div>
+                                <div class="form-group">
+
+                                    <label for="email">Email:</label>
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="Your email" />
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="subject">Subject:</label>
+                                    <input type="text" name="subject" id="subject" class="form-control" placeholder="Enter the subject of the message" />
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="message">Message:</label>
+                                    <textarea rows="4" id="message" name="message" class="form-control" placeholder="Enter your message here"></textarea>
+                                </div>
+                                <div class="form-group checkbox-form-group">
+                                    <input type="checkbox" name="rodo" id="rodo" class="form-control" />
+                                    <label for="rodo">
+                                        Your personal data will be placed on the website administrator's mailbox (Mateusz Myżalik). You will have the right to request
+                                        access to personal data, rectification and deletion. Providing the data is voluntary,
+                                        but necessary to send the contact form.
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-default">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row row-footer">
+                <div class="col-lg-12">
+                    Created by
+                    <a class="link-to-mateusz-myzalik" href="#about-me">Mateusz Myżalik</a>
+                    <a href="https://www.linkedin.com/in/mmyzalik/" target="_blank">
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/myzal?tab=repositories" target="_blank">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+    <!-- build:js -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--<script src="js/bootstrap.min.js"></script>-->
+    <!--<script src="js/plugins.js"></script>-->
+    <script src="src/js/script.js"></script>
+    <!-- endbuild  -->
+</body>
+
+</html>

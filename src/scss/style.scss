@@ -1,0 +1,698 @@
+@import "settings";
+
+@media (min-width: 768px) {
+  .navbar-header {
+    position: absolute;
+
+  }
+  .navbar-default {
+    background: white;
+  }
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+    > li {
+      float: none;
+      display: inline-block;
+      font-size: 24px;
+      a {
+        padding: 15px 0;
+        margin-right: 15px;
+        margin-left: 15px;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+    }
+    li.active a, li a:hover {
+      background: white !important;
+      border-bottom: 3px solid red !important;
+    }
+  }
+  .navbar-brand {
+    padding-top: 18px;
+  }
+}
+
+/* base style */
+body {
+  font-family: 'Dosis', sans-serif;
+}
+
+p {
+
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 15px;
+  margin: 0;
+  color: gray;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+h2 {
+  margin-bottom: 6%;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 48px;
+  color: #db3021;
+}
+
+.container-fluid {
+  section {
+    padding: 6% 0;
+  }
+}
+
+.container {
+  section {
+    padding: 6% 0;
+    border-bottom: 1px solid rgba(139, 139, 139, 0.20);
+  }
+  section#technologies {
+    border-top: 1px solid rgba(139, 139, 139, 0.2);
+  }
+}
+
+.container:last-child section:last-child {
+
+  border-bottom: unset;
+}
+
+/************* section obout  me ************/
+#about-me {
+  figure {
+    display: inline-block;
+  }
+  figcaption {
+    text-align: center;
+  }
+  .my-small-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-left: 25px;
+  }
+  p {
+    font-size: 23px;
+  }
+}
+
+/************* section my portfolio ************/
+#portfolio {
+  h2.my-portfolio {
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #myCarousel {
+    .carousel-caption {
+      width: 100%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      text-align: left;
+      padding-left: 50px;
+      background: rgba(227, 6, 19, 0.5);
+    }
+    .fluid-row {
+      display: table;
+      [class*="col-"].image-col {
+        padding: 0;
+        background-color: gray;
+        overflow: hidden;
+        height: 410px;
+        img {
+          opacity: 0.95;
+        }
+
+      }
+      > [class*="col-"] {
+        display: table-cell;
+        vertical-align: middle;
+        color: white;
+        float: none;
+        padding: 0 30px;
+
+      }
+      [class*="col-"], h4, h5 {
+        font-weight: bold;
+      }
+
+      p {
+        font-weight: lighter;
+
+      }
+      .text-col {
+        background: #db3021;
+      }
+      h3 {
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      ul {
+        list-style: none;
+        display: inline;
+        li {
+          float: left;
+          margin-right: 30px;
+          font-size: 50px;
+          height: 50px;
+          line-height: 50px;
+        }
+      }
+      h5 {
+        float: left;
+        text-transform: uppercase;
+      }
+      .show-links-projects {
+        display: block;
+        float: left;
+        margin-top: 30px;
+        width: 100%;
+        li {
+          margin: 0 15px;
+        }
+
+      }
+
+      .technology li {
+        font-size: 30px;
+        height: 30px;
+        line-height: 30px;
+
+        a {
+          color: unset;
+        }
+
+      }
+    }
+    .carousel-indicators {
+      width: 150px;
+      right: 0;
+      padding: 0;
+      margin: 0;
+      left: unset;
+      text-align: right;
+      padding-right: 50px;
+      bottom: 5%;
+      z-index: 15;
+      li, li.active {
+        width: 15px;
+        height: 15px;
+        border: none;
+        background: white;
+        margin: 0 5px;
+      }
+      li.active {
+        background: grey;
+      }
+      li:hover {
+        opacity: 0.5;
+      }
+    }
+
+    .glyphicon-menu-left,
+    .glyphicon-menu-right {
+      position: absolute;
+      top: 50%;
+      z-index: 5;
+      display: inline-block;
+      margin-right: -10px;
+      width: 86px;
+      height: 92px;
+      margin-top: -10px;
+      font-size: 100px;
+      color: white;
+    }
+
+    .glyphicon-menu-left {
+      left: 75px;
+    }
+    .glyphicon-menu-right {
+      right: 75px;
+    }
+
+    .glyphicon-menu-left {
+      color: #db3021;
+    }
+    .glyphicon-menu-left:hover {
+      color: white;
+
+    }
+    .glyphicon-menu-right:hover {
+
+      color: grey;
+    }
+    .carousel-control {
+      background: transparent;
+      text-shadow: none;
+      opacity: 1;
+    }
+  }
+}
+
+/************* section technologies ************/
+#technologies {
+
+  span.helper-center-img {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+
+  }
+  .invisible-line {
+
+    margin: 4% 0;
+  }
+  .icon {
+    margin: 0 auto;
+  }
+
+  .big-icon {
+    font-size: 110px;
+  }
+  .medium-icon {
+    font-size: 80px;
+  }
+  .small-icon {
+    font-size: 60px;
+  }
+  .row-technologies {
+    margin: 4% 0;
+    display: table;
+    width: 100%;
+    min-height: 160px;
+    em {
+      position: relative;
+      z-index: 100;
+
+    }
+    .circle-background {
+      width: 150px;
+      height: 150px;
+      background: #f8f8f8;
+      border-radius: 75px;
+
+      margin: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+    [class*="col-"] {
+      display: table-cell;
+      float: none;
+      vertical-align: middle;
+      text-align: center;
+    }
+    [class*="col-"]:hover .circle-background {
+      background: #7bdb6b;
+    }
+    [class*="col-"]:hover .icon {
+      color: black;
+    }
+  }
+  /***color icons****/
+  .icon-css3 {
+    color: #0170ba;
+  }
+
+  .icon-html5 {
+    color: #e44d26;
+  }
+  .icon-jquery {
+    color: #0868ac;
+  }
+  .icon-bootstrap {
+    color: #330033;
+  }
+  .icon-js {
+    color: #e5a228;
+  }
+  .icon-drupal {
+    color: #008dcb;
+  }
+  .icon-php {
+    color: #5a69a6;
+  }
+  .icon-angular {
+    color: #a6120d;
+  }
+  .icon-photoshop {
+    color: #242238;
+  }
+  .icon-sass {
+    color: #cd679a;
+  }
+  .icon-git {
+    color: #f05033;
+  }
+  .icon-mysql {
+    color: #5e87a1;
+
+  }
+  /* correct icon with wrong centering */
+  .icon-drupal:before, .icon-bootstrap:before, .icon-jquery:before {
+    margin-bottom: 20px;
+  }
+  .description-skills {
+    margin-top: 40px;
+
+  }
+}
+
+/************* section contact ************/
+#contact {
+
+
+  label {
+    display: none;
+  }
+
+  .checkbox-form-group{ label{
+    display:block;
+    color: white;
+      text-transform: uppercase;
+    font-size: 12px;
+    margin-left: 45px;
+  }
+  input{
+    width: 30px;
+    float: left;
+    margin-top: 0;
+    margin-right: 15px;
+    margin-bottom: 25px;
+  }
+  #rodo-error{
+    display: flex;
+    color: red;
+  }
+}
+
+  input, textarea {
+    width: 100%
+  }
+  .form-wrapper {
+    background-color: #7bdb6b;
+    padding: 35px;
+    .form-result {
+      display: none;
+      z-index: 1000;
+      color: white;
+      font-size: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      max-width: 485px;
+    }
+  }
+  .postcard {
+    margin-top: 50%;
+  }
+  .form-control.error::-webkit-input-placeholder {
+
+    color: red;
+  }
+  .form-control.error:-moz-placeholder {
+    color: red;
+  }
+  .form-control.error::-moz-placeholder {
+    color: red;
+  }
+  .form-control.error:-ms-input-placeholder {
+    color: red;
+  }
+}
+
+/************* footer ************/
+footer {
+  border-top: 1px solid rgba(139, 139, 139, 0.2);
+  .row-footer {
+    text-align: right;
+    font-size: 16px;
+    min-height: 50px;
+    line-height: 50px;
+    a {
+      color: unset;
+      font-weight: bold;
+    }
+    a.link-to-mateusz-myzalik {
+      text-decoration: none;
+    }
+    a.link-to-mateusz-myzalik:hover {
+      border-bottom: 2px solid red;
+    }
+    i {
+      font-size: 24px;
+    }
+    .fa-linkedin-square {
+      color: #006fa6;
+    }
+  }
+}
+
+/* RWD */
+@media only screen and (max-width: 1200px) {
+  /* PORTFOLIO */
+  #portfolio {
+    #myCarousel {
+      .fluid-row [class*="col-"].image-col {
+        background: #db3021;
+        padding-left: 30px;
+      }
+      .glyphicon-menu-left:hover {
+        color: gray;
+      }
+    }
+    h2.my-portfolio {
+      width: 970px;
+    }
+  }
+  /* TECHNOLOGIES */
+  #technologies {
+    .row-technologies [class*="col-"] {
+      width: 240px;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* GENERAL STYLES */
+  p {
+    font-size: 19px;
+  }
+  h2 {
+    font-size: 42px;
+  }
+  /* MENU */
+  .navbar-nav {
+    text-align: right;
+  }
+  .nav > li {
+    text-align: right;
+    text-transform: uppercase;
+  }
+  /* ABOUT ME */
+  #about-me {
+    .my-small-image {
+      display: none;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+  /*PORTFOLIO */
+  #portfolio {
+    #myCarousel {
+      .glyphicon-menu-left, .glyphicon-menu-right {
+        top: 35%;
+      }
+      .glyphicon-menu-right {
+        color: gray;
+      }
+      .glyphicon-menu-right:hover {
+        color: #db3021;
+      }
+      .fluid-row {
+        > [class*="col-"] {
+          display: block;
+          vertical-align: unset;
+          float: left;
+          width: 100%;
+          ul li {
+            margin-bottom: 25px;
+          }
+          .show-links-projects {
+            width: unset;
+            margin-top: unset;
+            padding-top: 15px;
+          }
+        }
+        [class*="col-"].image-col {
+          background: black;
+          padding-left: 0;
+          height: unset;
+          max-height: 410px;
+        }
+        .text-col {
+          min-height: 310px;
+          .col-lg-8 {
+            position: static;
+          }
+          .technology_links_wrapper {
+            position: absolute;
+            bottom: 0;
+          }
+        }
+      }
+      .glyphicon-menu-left {
+        left: 10px;
+      }
+      .glyphicon-menu-right {
+        right: 30px;
+      }
+    }
+    h2.my-portfolio {
+      width: 750px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* GENERAL STYLES */
+  h2 {
+    padding: 0 6%;
+  }
+  .nav.navbar-nav {
+    font-size: 25px;
+  }
+  /* ABOUT ME  */
+  #about-me {
+    .my-image {
+      text-align: center
+    }
+    p {
+      padding: 0 6%;
+    }
+    h2 {
+      margin-top: 40px;
+    }
+  }
+  /*PORTFOLIO */
+  #portfolio {
+    #myCarousel {
+      .fluid-row p {
+        font-size: 16px;
+      }
+      .carousel-indicators {
+        bottom: 264px;
+      }
+      .glyphicon-menu-left, .glyphicon-menu-right {
+        top: 25%;
+      }
+    }
+    h2.my-portfolio {
+      width: unset;
+    }
+  }
+
+  /* TECHNOLOGIES */
+  #technologies {
+    .big-icon {
+      font-size: 69px;
+    }
+    .medium-icon {
+      font-size: 56px;
+    }
+    .small-icon {
+      font-size: 38px;
+    }
+    .row-technologies .circle-background {
+      width: 96px;
+      height: 96px;
+      border-radius: 48px;
+    }
+  }
+  #contact {
+    .postcard {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h2 {
+    font-size: 34px;
+  }
+  #portfolio {
+    #myCarousel {
+      .fluid-row {
+        ul li {
+          margin-right: 14px;
+          font-size: 30px;
+          height: 30px;
+          line-height: 30px;
+        }
+        h3 {
+          font-size: 20px;
+        }
+        .text-col {
+          min-height: unset;
+          .technology_links_wrapper {
+            position: relative;
+          }
+        }
+        .technology_links_wrapper .show-links-projects {
+          width: 100%;
+          padding: 0;
+        }
+      }
+      .glyphicon-menu-left, .glyphicon-menu-right {
+        top: 23%;
+        font-size: 70px;
+      }
+      .glyphicon-menu-left {
+        left: 0;
+      }
+      .glyphicon-menu-right {
+        right: 10px;
+      }
+      .carousel-indicators {
+        bottom: 5%;
+      }
+      p {
+        display: none;
+      }
+    }
+  }
+  #technologies {
+    .row-technologies {
+      display: block;
+      margin: unset;
+
+      [class*="col-"] {
+        display: block;
+        float: left;
+        width: 50%;
+        min-height: 104px;
+        margin-bottom: 15px;
+      }
+    }
+    .icon {
+      line-height: 96px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
